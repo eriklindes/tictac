@@ -1,20 +1,18 @@
 
+"use strict";
+
 const restartButton = document.querySelector("#restart-button");
 const boardHTML = document.querySelector("gameboard").innerHTML
 
 // Player object - using factory
 
-const Player = (name) => {
-    const getName = () => name;
-    const win = () {
-        // update the html and stop the game
-    }
+const Player = (sign) => {
+    this.sign = sign;
 
-    const play = () {
-        // update html with the turn
-
-    }
-}
+    const getSign = () => {
+        return sign;
+    };
+};
 
 
 // Gameboard object (including gameboard array)

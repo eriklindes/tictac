@@ -19,6 +19,18 @@ body {
     font-family: var(--font);
 }
 
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+h1 {
+    line-height: 1.2;
+}
 
 
 /* HEADER */
@@ -32,12 +44,37 @@ body {
     color: var(--header-font-color);
 }
 
+.title {
+    font-size: 100px;
+}
+
+/* MAIN */
+
 .main {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
+/* RESTART BUTTON */
+
+#restart-button {
+    padding: 10px 20px;
+    border: 3px solid var(--blue-border-color);
+    border-radius: 7px;
+    background-color: var(--button-background-color);
+    color: var(--header-font-color);
+    font-size: 50px;
+
+}
+
+#restart-button:hover {
+    background-color: var(--button-hover-background);
+}
+
+#restart-button:active {
+    background-color: var(--button-active-background);
+}
 
 
 /* FOOTER */
@@ -47,4 +84,6 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 10px;
+    font-size: 20px;
 }
